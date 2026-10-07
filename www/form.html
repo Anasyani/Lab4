@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация студента</title>
+</head>
+<body>
+    <h1>Регистрация студента</h1>
+
+    <form id="demoForm" action="process.php" method="POST">
+        <p>
+            <label>Имя:<br>
+                <input type="text" name="username" placeholder="Введите имя" required>
+            </label>
+        </p>
+        <p>
+            <label>Email:<br>
+                <input type="email" name="email" placeholder="Ваш email">
+            </label>
+        </p>
+        <p>
+            <label>Возраст:<br>
+                <input type="number" name="age" min="16" max="100" required>
+            </label>
+        </p>
+        <p>
+            <label>Факультет:<br>
+                <select name="faculty">
+                    <option value="Физико-математических наук и ИТ">Физико-математических наук и ИТ</option>
+                    <option value="Природопользования и градостроительства">Природопользования и градостроительства</option>
+                    <option value="Гуманитарных наук">Гуманитарных наук</option>
+                    <option value="Образования">Образования</option>
+                </select>
+            </label>
+        </p>
+        <p>
+            <label>
+                <input type="checkbox" name="agree" value="да"> Согласен с правилами
+            </label>
+        </p>
+        <p>
+            Форма обучения:<br>
+            <label><input type="radio" name="study_form" value="Очная" checked> Очная</label>
+            <label><input type="radio" name="study_form" value="Заочная"> Заочная</label>
+        </p>
+        <button type="submit">Отправить</button>
+    </form>
+
+    <p><a href="index.php">На главную</a></p>
+
+    <script src="script.js"></script>
+</body>
+</html>

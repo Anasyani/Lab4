@@ -1,0 +1,9 @@
+{
+    "name": "student/lab4",
+    "description": "Lab 4: Composer, classes and public API",
+    "type": "project",
+    "require": {
+        "php": ">=8.1",
+        "guzzlehttp/guzzle": "^7.8"
+    }
+}
